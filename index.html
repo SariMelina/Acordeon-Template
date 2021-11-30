@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/section.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <title>ACORDEON</title>
+</head>
+<body>
+    <header></header>
+    <section>
+        <div class="questions">
+            <h1>Frequently Asked Questions</h1>
+            <div class="answers">
+                <div class="question">
+                    <span>
+                        <a href="#">
+                            <i id="menos" class="fas fa-minus-square"></i>
+                            <i id="ayuda" class="fas fa-plus-square"></i>
+                        </a>
+                    </span>
+                    <h2 id="title" >Do you provide any scripts with your templates?</h2>
+                </div>                
+                <p class="answer">
+                    Our templates do not include any additional scripts. Newsletter subscriptions,
+                    search fields, forums, image galleries (in HTML versions of Flash products) are inactive. 
+                    Basic scripts can be easily added at www.zemez.io If you are not sure that the element 
+                    you’re interested in is active please contact our Support Chat for clarification.
+                </p>
+            </div>
+            <div class="answers">
+                <div class="question">
+                    <span>
+                        <a href="#">
+                            <i id="menos" class="fas fa-minus-square"></i>
+                            <i class="fas fa-plus-square"></i>
+                        </a>                
+                    </span>
+                    <h2 id="title">What do I receive when I order a template?</h2>
+                </div>                
+                <p class="answer">
+                    After you complete the payment via our secure form 
+                    you will receive the instructions for downloading the product. 
+                    The source files in the download package can vary based 
+                    on the type of the product you have purchased.
+                </p>
+            </div>
+            <div class="answers">
+                <div class="question">
+                    <span>
+                        <a href="#">
+                            <i id="menos" class="fas fa-minus-square"></i>
+                            <i class="fas fa-plus-square"></i>
+                        </a>                
+                    </span>
+                    <h2 id="title">In what formats are your templates available?</h2>    
+                </div>
+                <p class="answer">
+                    Website templates are available in Photoshop and
+                    HTML formats. Fonts are included with the Photoshop
+                    file. In most templates, HTML is compatible with
+                    Adobe® Dreamweaver® and Microsoft® FrontPage®.
+                </p>
+            </div>
+            <div class="answers">
+                <div class="question">
+                    <span>
+                        <a href="#">
+                            <i id="menos" class="fas fa-minus-square"></i>
+                            <i class="fas fa-plus-square"></i>
+                        </a>                
+                    </span>
+                    <h2 id="title">What am I allowed to do with the templates?</h2>
+                </div>                
+                <p class="answer">
+                    You may build a website using the template in any
+                    way you like. You may not resell or redistribute
+                    templates (like we do); claim intellectual or exclusive
+                    ownership to any of our products, modified or
+                    unmodified. All products are property of content
+                    providing companies and individuals.
+                </p>
+            </div>
+        </div>
+        <div class="skills">
+            <h1>Skills</h1>
+            <div class="porcen">
+                <h2>Branding</h2>
+                <h2>90%</h2>                
+            </div>
+            <div id="azul">
+                <progress value="90" max="100"></progress>
+            </div>
+            <div class="porcen">
+                <h2>Web Design</h2>
+                <h2>65%</h2>
+            </div>
+            <div id="amarillo">
+                <progress value="65" max="100"></progress>
+            </div>
+            <div class="porcen">
+                <h2>Copywriting</h2>
+                <h2>100%</h2>
+            </div>
+            <div id="rojo">
+                <progress  value="100" max="100"></progress>
+            </div>
+            <div class="porcen">
+                <h2>Video Production</h2>
+                <h2>75%</h2>
+            </div>
+            <div id="verde"> 
+                <progress  value="75" max="100"></progress>
+            </div>                  
+        </div>
+    </section>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(".question").click(function () {            
+            var t = $(this);
+            var tp = t.next();
+            tp.slideToggle(); 
+            $(this).toggleClass("fas fa-minus-square");                      
+        });       
+        
+    </script>
+</body>
+</html>

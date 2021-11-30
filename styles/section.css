@@ -1,0 +1,64 @@
+section {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+section i {
+    color: blue;
+}
+section .questions {    
+    width:48%;
+}
+section .skills {
+    width: 48%;
+}
+section .questions .answers{ 
+    border-top: rgb(201, 201, 201, 0.556) 0.5px solid;
+    border-bottom: rgba(201, 201, 201, 0.556) 0.5px solid;
+    max-width: 500px;
+    padding: 20px 20px;    
+}
+section .questions .answers .question {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#title {
+    cursor: pointer;
+    width: calc(100% - 50px);
+}
+#menos {
+    display: none;
+}
+section .skills .porcen {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+section progress {
+    margin-bottom: 25px;
+    width: 100%;
+    -webkit-appearance: none;
+    height: 3px;
+} 
+::-webkit-progress-bar {
+    background-color: #e6e6e6;
+ }
+#rojo ::-webkit-progress-value {
+    background-color: #ed4882;
+}
+#amarillo ::-webkit-progress-value {
+    background-color: #e5c618;
+}
+#azul ::-webkit-progress-value {
+    background-color: #2937ef;
+} 
+#verde ::-webkit-progress-value {
+    background-color: #4cca86;
+}
